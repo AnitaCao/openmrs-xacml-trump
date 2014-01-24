@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/customdatatype/datatype
+END
+RegexValidatedTextTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/customdatatype/datatype/RegexValidatedTextTest.java
+END
+DateDatatypeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/customdatatype/datatype/DateDatatypeTest.java
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs
+END
+OpenmrsTestsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/OpenmrsTestsTest.java
+END
+BaseCustomizableMetadataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/BaseCustomizableMetadataTest.java
+END
+RoleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/RoleTest.java
+END
+PersonTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PersonTest.java
+END
+LocationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/LocationTest.java
+END
+EncounterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/EncounterTest.java
+END
+BaseOpenmrsObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/BaseOpenmrsObjectTest.java
+END
+ConceptWordTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/ConceptWordTest.java
+END
+ProviderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/ProviderTest.java
+END
+ConceptReferenceTermTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/ConceptReferenceTermTest.java
+END
+OpenmrsTestAnnotationsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/OpenmrsTestAnnotationsTest.java
+END
+OrderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/OrderTest.java
+END
+EncounterTypeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/EncounterTypeTest.java
+END
+PatientStateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PatientStateTest.java
+END
+UserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/UserTest.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/package.html
+END
+EncounterRoleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/EncounterRoleTest.java
+END
+ConceptTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/ConceptTest.java
+END
+PersonAttributeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PersonAttributeTest.java
+END
+PatientTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PatientTest.java
+END
+FormTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/FormTest.java
+END
+PersonNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PersonNameTest.java
+END
+ObsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/ObsTest.java
+END
+PatientProgramTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/PatientProgramTest.java
+END

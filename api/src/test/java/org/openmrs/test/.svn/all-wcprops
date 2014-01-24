@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test
+END
+CreateInitialDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/CreateInitialDataSet.java
+END
+SkipBaseSetupAnnotationExecutionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/SkipBaseSetupAnnotationExecutionListener.java
+END
+StartModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/StartModule.java
+END
+StartModuleExecutionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/StartModuleExecutionListener.java
+END
+SkipBaseSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/SkipBaseSetup.java
+END
+CreateCoreUuids.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/CreateCoreUuids.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/package.html
+END
+MigrateDataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/MigrateDataSet.java
+END
+BaseContextSensitiveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/BaseContextSensitiveTest.java
+END
+Verifies.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/Verifies.java
+END
+BaseModuleContextSensitiveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/BaseModuleContextSensitiveTest.java
+END
+TestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/test/TestUtil.java
+END

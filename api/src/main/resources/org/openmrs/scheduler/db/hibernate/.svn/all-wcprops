@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/scheduler/db/hibernate
+END
+Schedule.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/scheduler/db/hibernate/Schedule.hbm.xml
+END
+TaskDefinition.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/scheduler/db/hibernate/TaskDefinition.hbm.xml
+END

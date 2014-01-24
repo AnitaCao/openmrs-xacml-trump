@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/layout
+END
+LayoutPortletController.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/layout/LayoutPortletController.java
+END
+AddressLayoutPortletController.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/layout/AddressLayoutPortletController.java
+END
+NameLayoutPortletController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/layout/NameLayoutPortletController.java
+END

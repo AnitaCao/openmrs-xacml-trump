@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/hl7/db/hibernate
+END
+HL7InQueue.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/hl7/db/hibernate/HL7InQueue.hbm.xml
+END
+HL7InArchive.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/hl7/db/hibernate/HL7InArchive.hbm.xml
+END
+HL7Source.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/hl7/db/hibernate/HL7Source.hbm.xml
+END
+HL7InError.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/hl7/db/hibernate/HL7InError.hbm.xml
+END

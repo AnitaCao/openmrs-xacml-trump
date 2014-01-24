@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/messagesource/impl
+END
+CachedMessageSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/messagesource/impl/CachedMessageSource.java
+END
+MutableResourceBundleMessageSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/messagesource/impl/MutableResourceBundleMessageSource.java
+END
+MessageSourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/messagesource/impl/MessageSourceServiceImpl.java
+END

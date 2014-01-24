@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/hibernate
+END
+AuditableInterceptorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/hibernate/AuditableInterceptorTest.java
+END
+HibernateProviderDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/hibernate/HibernateProviderDAOTest.java
+END
+HibernatePatientDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/hibernate/HibernatePatientDAOTest.java
+END

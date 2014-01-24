@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit
+END
+VisitTypeListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitTypeListController.java
+END
+ConfigureVisitsFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/ConfigureVisitsFormController.java
+END
+VisitFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitFormController.java
+END
+VisitAttributeTypeFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitAttributeTypeFormController.java
+END
+VisitAttributeTypeListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitAttributeTypeListController.java
+END
+VisitTypeFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitTypeFormController.java
+END
+VisitListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/controller/visit/VisitListController.java
+END

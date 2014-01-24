@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: anitacao
+Build-Jdk: 1.7.0_45
+Build-Timestamp: 
+Created-By: Maven Integration for Eclipse
+Specification-Vendor: 1.9.2  Build ${revisionNumber}
+Specification-Version: 1.9.2.${revisionNumber}
+

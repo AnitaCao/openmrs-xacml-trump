@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db
+END
+PatientDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/PatientDAOTest.java
+END
+PersonDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/PersonDAOTest.java
+END
+ConceptDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/ConceptDAOTest.java
+END
+VisitDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/VisitDAOTest.java
+END
+UserDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/UserDAOTest.java
+END
+ContextDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/ContextDAOTest.java
+END
+EncounterDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/EncounterDAOTest.java
+END
+SerializedObjectDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/SerializedObjectDAOTest.java
+END
+ProgramWorkflowDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/api/db/ProgramWorkflowDAOTest.java
+END

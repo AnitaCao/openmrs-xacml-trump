@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider
+END
+localHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider/localHeader.jsp
+END
+providerAttributeTypeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider/providerAttributeTypeForm.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider/index.jsp
+END
+providerAttributeTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider/providerAttributeTypeList.jsp
+END
+providerForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/admin/provider/providerForm.jsp
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype
+END
+FreeTextDatatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype/FreeTextDatatype.java
+END
+BooleanDatatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype/BooleanDatatype.java
+END
+LongFreeTextDatatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype/LongFreeTextDatatype.java
+END
+RegexValidatedTextDatatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype/RegexValidatedTextDatatype.java
+END
+DateDatatype.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/customdatatype/datatype/DateDatatype.java
+END

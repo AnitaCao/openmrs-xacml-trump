@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/html
+END
+__package__.js
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/html/__package__.js
+END
+extras.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/html/extras.js
+END
+shadow.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/html/shadow.js
+END
+layout.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/html/layout.js
+END

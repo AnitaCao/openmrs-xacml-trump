@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/resources/org/openmrs/web/controller/include
+END
+PortletControllerTest-bmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/resources/org/openmrs/web/controller/include/PortletControllerTest-bmi.xml
+END

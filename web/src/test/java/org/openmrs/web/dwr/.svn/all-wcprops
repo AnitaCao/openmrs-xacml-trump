@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr
+END
+DWRConceptServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/DWRConceptServiceTest.java
+END
+PersonListItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/PersonListItemTest.java
+END
+DWRProviderServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/DWRProviderServiceTest.java
+END
+ProviderListItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/ProviderListItemTest.java
+END
+DWRProgramWorkflowServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/DWRProgramWorkflowServiceTest.java
+END
+DWRPersonServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/DWRPersonServiceTest.java
+END
+DWRPatientServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/dwr/DWRPatientServiceTest.java
+END

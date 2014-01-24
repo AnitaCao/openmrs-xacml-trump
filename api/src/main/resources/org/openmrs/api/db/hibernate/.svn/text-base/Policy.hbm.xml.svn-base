@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openmrs">
+
+    <class name="Policy" table="policy">
+    
+    	<id name="policyId" type="java.lang.Integer" column="policy_id" unsaved-value="0">
+			<generator class="native">
+				<param name="sequence">policy_policy_id_seq</param>
+			</generator>
+		</id>
+
+		<property name="description" type="java.lang.String"
+			column="description" not-null="true" length="255" />
+			
+		<property name="content" type="java.lang.String">
+			<column name="content" sql-type="LONGTEXT"/>
+		</property>
+		
+		<property name="name" type="java.lang.String"
+			column="policy_name" length="40" />
+			
+    </class>
+
+</hibernate-mapping>

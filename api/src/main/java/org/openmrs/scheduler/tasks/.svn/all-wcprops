@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks
+END
+ProcessHL7InQueueTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/ProcessHL7InQueueTask.java
+END
+HelloWorldThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/HelloWorldThread.java
+END
+SendEmailTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/SendEmailTask.java
+END
+GenerateDataExportTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/GenerateDataExportTask.java
+END
+ConceptIndexUpdateTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/ConceptIndexUpdateTask.java
+END
+TestTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/TestTask.java
+END
+AbstractTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/AbstractTask.java
+END
+AutoCloseVisitsTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/AutoCloseVisitsTask.java
+END
+CheckInternetConnectivityTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/CheckInternetConnectivityTask.java
+END
+TaskThreadedInitializationWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/TaskThreadedInitializationWrapper.java
+END
+HelloWorldTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/HelloWorldTask.java
+END
+AlertReminderTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/scheduler/tasks/AlertReminderTask.java
+END

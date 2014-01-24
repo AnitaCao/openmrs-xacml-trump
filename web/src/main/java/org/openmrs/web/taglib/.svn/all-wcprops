@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib
+END
+ListPickerTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ListPickerTag.java
+END
+RequireConfigurationTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/RequireConfigurationTag.java
+END
+ShowGraphTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ShowGraphTag.java
+END
+OpenmrsHtmlEscapingAwareTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/OpenmrsHtmlEscapingAwareTag.java
+END
+ActiveListWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ActiveListWidget.java
+END
+GlobalPropertyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/GlobalPropertyTag.java
+END
+LocationAndDepth.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/LocationAndDepth.java
+END
+ForEachRecordTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachRecordTag.java
+END
+OpenmrsRequestContextAwareBodyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/OpenmrsRequestContextAwareBodyTag.java
+END
+SummaryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/SummaryTest.java
+END
+RequireTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/RequireTag.java
+END
+ConceptTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ConceptTag.java
+END
+ObsTableWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ObsTableWidget.java
+END
+AuthTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/AuthTag.java
+END
+PatientWidgetTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/PatientWidgetTag.java
+END
+ForEachEncounterTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachEncounterTag.java
+END
+UserWidgetTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/UserWidgetTag.java
+END
+PrivilegeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/PrivilegeTag.java
+END
+ContextPathTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ContextPathTag.java
+END
+DateTimePatternTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/DateTimePatternTag.java
+END
+FieldGenTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/FieldGenTag.java
+END
+ForEachObsTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachObsTag.java
+END
+FormatTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/FormatTag.java
+END
+RequireConfigurationByPrefixTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/RequireConfigurationByPrefixTag.java
+END
+PortletTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/PortletTag.java
+END
+DisplayChartTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/DisplayChartTag.java
+END
+HtmlIncludeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/HtmlIncludeTag.java
+END
+UserPropertyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/UserPropertyTag.java
+END
+ForEachVisitTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachVisitTag.java
+END
+DatePatternTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/DatePatternTag.java
+END
+OpenmrsMessageTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/OpenmrsMessageTag.java
+END
+TimePatternTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/TimePatternTag.java
+END
+ForEachDisplayAttributeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachDisplayAttributeTag.java
+END
+ForEachDrugOrderTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/ForEachDrugOrderTag.java
+END
+FormatDateTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/taglib/FormatDateTag.java
+END

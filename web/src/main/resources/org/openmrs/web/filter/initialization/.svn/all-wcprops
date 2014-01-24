@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization
+END
+chooselang.vm
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/chooselang.vm
+END
+wizardcomplete.vm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/wizardcomplete.vm
+END
+adminusersetup.vm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/adminusersetup.vm
+END
+databasetablesanduser.vm
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/databasetablesanduser.vm
+END
+databasesetup.vm
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/databasesetup.vm
+END
+implementationidsetup.vm
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/implementationidsetup.vm
+END
+progress.vm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/progress.vm
+END
+header.vm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/header.vm
+END
+remotedetails.vm
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/remotedetails.vm
+END
+installmethod.vm
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/installmethod.vm
+END
+footer.vm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/footer.vm
+END
+otherruntimeproperties.vm
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/otherruntimeproperties.vm
+END
+simplesetup.vm
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/initialization/simplesetup.vm
+END

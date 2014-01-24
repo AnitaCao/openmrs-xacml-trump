@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/serialization
+END
+SerializationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/serialization/SerializationException.java
+END
+SimpleXStreamSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/serialization/SimpleXStreamSerializer.java
+END
+OpenmrsSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/serialization/OpenmrsSerializer.java
+END

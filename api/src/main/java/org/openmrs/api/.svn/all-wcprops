@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/150/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api
+END
+PatientService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PatientService.java
+END
+GlobalPropertyListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/GlobalPropertyListener.java
+END
+VisitService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/VisitService.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/133/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/UserService.java
+END
+InsufficientIdentifiersException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InsufficientIdentifiersException.java
+END
+OrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/OrderService.java
+END
+EventListeners.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/EventListeners.java
+END
+MissingRequiredIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/MissingRequiredIdentifierException.java
+END
+PersonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PersonService.java
+END
+DataSetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/DataSetService.java
+END
+DecesionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/134/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/DecesionService.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/package.html
+END
+APIAuthenticationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/APIAuthenticationException.java
+END
+WeakPasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/WeakPasswordException.java
+END
+ConceptStopWordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptStopWordException.java
+END
+ConceptsLockedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptsLockedException.java
+END
+PatientSetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PatientSetService.java
+END
+ShortPasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ShortPasswordException.java
+END
+InvalidObligationConfigException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/133/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InvalidObligationConfigException.java
+END
+AdministrationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/AdministrationService.java
+END
+EnforceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/134/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/EnforceService.java
+END
+InvalidCharactersPasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InvalidCharactersPasswordException.java
+END
+ProgramWorkflowService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ProgramWorkflowService.java
+END
+OpenmrsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/OpenmrsService.java
+END
+DatatypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/DatatypeService.java
+END
+ConceptService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptService.java
+END
+ConceptNameType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptNameType.java
+END
+DuplicateConceptNameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/DuplicateConceptNameException.java
+END
+SerializationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/SerializationService.java
+END
+ProviderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ProviderService.java
+END
+PolicyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/150/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PolicyService.java
+END
+MissingObligationValueException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/133/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/MissingObligationValueException.java
+END
+EncounterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/EncounterService.java
+END
+PatientIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PatientIdentifierException.java
+END
+ReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ReportService.java
+END
+CohortService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/CohortService.java
+END
+ConceptNameInUseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptNameInUseException.java
+END
+LocationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/LocationService.java
+END
+DuplicateIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/DuplicateIdentifierException.java
+END
+InvalidIdentifierFormatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InvalidIdentifierFormatException.java
+END
+ObsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ObsService.java
+END
+ConceptInUseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ConceptInUseException.java
+END
+APIException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/APIException.java
+END
+IdentifierNotUniqueException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/IdentifierNotUniqueException.java
+END
+PasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/PasswordException.java
+END
+InvalidCheckDigitException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InvalidCheckDigitException.java
+END
+InvalidObligationValueException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/133/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/InvalidObligationValueException.java
+END
+BlankIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/BlankIdentifierException.java
+END
+FormService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/FormService.java
+END
+ActiveListService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/api/ActiveListService.java
+END

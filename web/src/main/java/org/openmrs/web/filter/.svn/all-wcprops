@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter
+END
+JspClassLoaderFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/JspClassLoaderFilter.java
+END
+OpenmrsFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/OpenmrsFilter.java
+END
+GZIPResponseStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/GZIPResponseStream.java
+END
+GZIPResponseWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/GZIPResponseWrapper.java
+END
+StartupFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/StartupFilter.java
+END
+GZIPFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/filter/GZIPFilter.java
+END

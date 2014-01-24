@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs
+END
+UserSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/UserSearch.js
+END
+FieldSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/FieldSearch.js
+END
+ConceptSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/ConceptSearch.js
+END
+PatientSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/PatientSearch.js
+END
+PersonSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/PersonSearch.js
+END
+LocationSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/LocationSearch.js
+END
+OpenmrsSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/OpenmrsSearch.js
+END
+EncounterSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/EncounterSearch.js
+END
+OpenmrsPopup.js
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/view/scripts/dojo/src/widget/openmrs/OpenmrsPopup.js
+END

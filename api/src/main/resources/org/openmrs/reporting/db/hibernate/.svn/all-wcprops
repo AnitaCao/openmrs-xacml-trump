@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/reporting/db/hibernate
+END
+ReportSchemaXml.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/reporting/db/hibernate/ReportSchemaXml.hbm.xml
+END
+ReportObject.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/reporting/db/hibernate/ReportObject.hbm.xml
+END
+Report.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/resources/org/openmrs/reporting/db/hibernate/Report.hbm.xml
+END

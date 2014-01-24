@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer
+END
+openmrs_online.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/openmrs_online.nsi
+END
+tomcat-users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/tomcat-users.xml
+END
+OpenMRS-README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/OpenMRS-README.txt
+END
+openmrs.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/openmrs.bmp
+END
+installer_setup.nsh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/installer_setup.nsh
+END
+openmrs.ico
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/openmrs.ico
+END
+openmrs_offline.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/openmrs-policy-version/metadata/installer/openmrs_offline.nsi
+END

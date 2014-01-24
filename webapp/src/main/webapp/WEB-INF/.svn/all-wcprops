@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/147/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF
+END
+messages_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_es.properties
+END
+messages_kh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_kh.properties
+END
+messages_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_fr.properties
+END
+messages_en_GB.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_en_GB.properties
+END
+messages_it.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_it.properties
+END
+messages_fa.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_fa.properties
+END
+openmrs_static_content-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/openmrs_static_content-servlet.xml
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/147/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages.properties
+END
+dwr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/dwr.xml
+END
+messages_pt.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_pt.properties
+END
+messages_hi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/messages_hi.properties
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/openmrs-policy-version/webapp/src/main/webapp/WEB-INF/web.xml
+END

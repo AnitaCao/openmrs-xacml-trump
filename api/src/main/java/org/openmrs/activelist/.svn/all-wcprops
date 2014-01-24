@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist
+END
+Allergy.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/Allergy.java
+END
+Problem.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/Problem.java
+END
+ActiveListType.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/ActiveListType.java
+END
+AllergySeverity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/AllergySeverity.java
+END
+AllergyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/AllergyType.java
+END
+ActiveListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/ActiveListItem.java
+END
+ProblemModifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/activelist/ProblemModifier.java
+END

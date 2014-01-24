@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/resources/org/openmrs/web/taglib/include
+END
+RequireTagTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/resources/org/openmrs/web/taglib/include/RequireTagTest.xml
+END
+ForEachEncounterTagTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/resources/org/openmrs/web/taglib/include/ForEachEncounterTagTest.xml
+END

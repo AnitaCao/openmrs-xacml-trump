@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op
+END
+TransformOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/TransformOperator.java
+END
+First.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/First.java
+END
+NotExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/NotExists.java
+END
+Count.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Count.java
+END
+LogicalOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/LogicalOperator.java
+END
+ComparisonOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/ComparisonOperator.java
+END
+Within.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Within.java
+END
+AsOf.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/AsOf.java
+END
+Operand.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Operand.java
+END
+In.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/In.java
+END
+Operator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Operator.java
+END
+Or.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Or.java
+END
+Before.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Before.java
+END
+Contains.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Contains.java
+END
+Equals.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Equals.java
+END
+Average.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Average.java
+END
+After.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/After.java
+END
+Exists.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Exists.java
+END
+Distinct.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Distinct.java
+END
+GreaterThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/GreaterThan.java
+END
+GreaterThanEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/GreaterThanEquals.java
+END
+LessThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/LessThan.java
+END
+LessThanEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/LessThanEquals.java
+END
+And.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/And.java
+END
+Last.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Last.java
+END
+Not.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/main/java/org/openmrs/logic/op/Not.java
+END

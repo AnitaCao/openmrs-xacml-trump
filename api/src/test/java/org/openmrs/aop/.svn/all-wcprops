@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/aop
+END
+RequiredDataAdviceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/aop/RequiredDataAdviceTest.java
+END
+AuthorizationAdviceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/aop/AuthorizationAdviceTest.java
+END

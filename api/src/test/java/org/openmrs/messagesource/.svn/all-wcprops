@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/messagesource
+END
+MockPresentationMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/messagesource/MockPresentationMessage.java
+END
+PresentationMessageMapTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/java/org/openmrs/messagesource/PresentationMessageMapTest.java
+END

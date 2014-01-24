@@ -1,0 +1,306 @@
+package org.openmrs.util;
+
+import java.io.StringWriter;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Marshaller;
+
+import org.openmrs.Privilege;
+import org.openmrs.Role;
+import org.openmrs.api.UserService;
+import org.openmrs.api.context.Context;
+import org.openmrs.core.policy.AttributeDesignatorType;
+import org.openmrs.core.policy.AttributeValueType;
+import org.openmrs.core.policy.EffectType;
+import org.openmrs.core.policy.ObjectFactory;
+import org.openmrs.core.policy.PolicySetType;
+import org.openmrs.core.policy.PolicyType;
+import org.openmrs.core.policy.ResourceMatchType;
+import org.openmrs.core.policy.ResourceType;
+import org.openmrs.core.policy.ResourcesType;
+import org.openmrs.core.policy.RuleType;
+import org.openmrs.core.policy.SubjectAttributeDesignatorType;
+import org.openmrs.core.policy.SubjectMatchType;
+import org.openmrs.core.policy.SubjectType;
+import org.openmrs.core.policy.SubjectsType;
+import org.openmrs.core.policy.TargetType;
+import org.openmrs.util.ContextManager;
+
+public class PolicyGenerator {
+	
+	private static final PolicyGenerator instance = new PolicyGenerator();
+	
+	public static final String XML_PREFIX_MAPPER = "com.sun.xml.bind.namespacePrefixMapper";
+	
+	private PolicyGenerator() {
+	}
+	
+	public static PolicyGenerator getInstance() {
+		return instance;
+	}
+	
+	public String getPolicyContent(Map<String, UserInformation> userInformationMap, boolean isUserBased) throws Exception {
+		PolicySetType policySet = new PolicySetType();
+		policySet.setPolicyCombiningAlgId("urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:first-applicable");
+		if (isUserBased) {
+			policySet.setPolicySetId("openmrs-user-policyset");
+		} else {
+			policySet.setPolicySetId("openmrs-role-policyset");
+		}
+		
+		policySet.setTarget(new TargetType());
+		
+		if (isUserBased) {
+			generateUserPolicy(policySet, userInformationMap);
+		} else {
+			generateRolePolicy(policySet, userInformationMap);
+		}
+		
+		JAXBContext context = ContextManager.getPolicyContext();
+		Marshaller marshaller = context.createMarshaller();
+		
+		StringWriter content = new StringWriter();
+		org.openmrs.core.policy.ObjectFactory policyObjectFactory = new org.openmrs.core.policy.ObjectFactory();
+		
+		JAXBElement<PolicySetType> jaxbElement = policyObjectFactory.createPolicySet(policySet);
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, new Boolean(true));
+		marshaller.setProperty(XML_PREFIX_MAPPER, new PolicyPrefixMapper());
+		marshaller.marshal(jaxbElement, content);
+		
+		return content.toString();
+		
+	}
+	
+	private void generateUserPolicy(PolicySetType policySet, Map<String, UserInformation> userInformationMap) {
+		Set<String> userList = userInformationMap.keySet();
+		
+		UserService us = Context.getUserService();
+		ObjectFactory objectFactory = new ObjectFactory();
+		
+		for (String userName : userList) {
+			
+			UserInformation userInfo = userInformationMap.get(userName);
+			List<String> roleList = userInfo.getAssignedRoles();
+			
+			Set<Privilege> userPriviledges = new HashSet<Privilege>();
+			
+			for (String roleName : roleList) {
+				Role role = us.getRole(roleName);
+				
+				Set<Privilege> rolePrviledges = role.getPrivileges();
+				for (Privilege priviledge : rolePrviledges) {
+					if (!userPriviledges.contains(priviledge)) {
+						userPriviledges.add(priviledge);
+					}
+				}
+			}
+			
+			PolicyType policy = new PolicyType();
+			policy.setRuleCombiningAlgId("urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:permit-overrides");
+			
+			TargetType policyTarget = new TargetType();
+			SubjectsType policySubjects = new SubjectsType();
+			SubjectType policySubject = new SubjectType();
+			SubjectMatchType policySubjectMatch = new SubjectMatchType();
+			policySubjectMatch.setMatchId("urn:oasis:names:tc:xacml:1.0:function:string-equal");
+			
+			SubjectAttributeDesignatorType policySubjectAttributeDesignator = new SubjectAttributeDesignatorType();
+			policySubjectAttributeDesignator.setAttributeId("opnmrs.user.id");
+			policySubjectAttributeDesignator.setDataType("http://www.w3.org/2001/XMLSchema#string");
+			policySubjectMatch.setSubjectAttributeDesignator(policySubjectAttributeDesignator);
+			
+			AttributeValueType attributeValueType = new AttributeValueType();
+			attributeValueType.setDataType("http://www.w3.org/2001/XMLSchema#string");
+			attributeValueType.getContent().add(userName);
+			policySubjectMatch.setAttributeValue(attributeValueType);
+			policySubject.getSubjectMatches().add(policySubjectMatch);
+			policySubjects.getSubjects().add(policySubject);
+			
+			policyTarget.setSubjects(policySubjects);
+			policy.setTarget(policyTarget);
+			
+			int counter = 0;
+			for (Privilege userPriviledge : userPriviledges) {
+				counter++;
+				RuleType rule = new RuleType();
+				
+				TargetType ruleTarget = new TargetType();
+				
+				ResourcesType ruleTargetResources = new ResourcesType();
+				ResourceType ruleTargetResource = new ResourceType();
+				ResourceMatchType resourceMatchType = new ResourceMatchType();
+				resourceMatchType.setMatchId("urn:oasis:names:tc:xacml:1.0:function:string-equal");
+				
+				AttributeDesignatorType resourceAttributeDesignator = new AttributeDesignatorType();
+				resourceAttributeDesignator.setAttributeId("openmrs.priviledge");
+				resourceAttributeDesignator.setDataType("http://www.w3.org/2001/XMLSchema#string");
+				resourceMatchType.setResourceAttributeDesignator(resourceAttributeDesignator);
+				
+				AttributeValueType resourceAttribute = new AttributeValueType();
+				resourceAttribute.setDataType("http://www.w3.org/2001/XMLSchema#string");
+				resourceAttribute.getContent().add(userPriviledge.getPrivilege());
+				resourceMatchType.setAttributeValue(resourceAttribute);
+				
+				ruleTargetResource.getResourceMatches().add(resourceMatchType);
+				ruleTargetResources.getResources().add(ruleTargetResource);
+				
+				ruleTarget.setResources(ruleTargetResources);
+				
+				rule.setTarget(ruleTarget);
+				rule.setRuleId(userName + "_" + counter);
+				rule.setEffect(EffectType.PERMIT);
+				
+				policy.getAdditionalInformation().add(rule);
+			}
+			
+			counter++;
+			RuleType lastRule = new RuleType();
+			lastRule.setRuleId(userName + "_" + counter);
+			lastRule.setEffect(EffectType.DENY);
+			policy.getAdditionalInformation().add(lastRule);
+			
+			policy.setPolicyId("openmrs-" + userName);
+			
+			JAXBElement<PolicyType> policyType = objectFactory.createPolicy(policy);
+			policySet.getAdditionalInformation().add(policyType);
+			
+		} // end of list of users
+		
+	}
+	
+	private void generateRolePolicy(PolicySetType policySet, Map<String, UserInformation> userInformationMap) {
+		Set<String> userList = userInformationMap.keySet();
+		Set<String> virtualRoles = new HashSet<String>();
+		String userRoleSeparator = "_";
+		String interRoleSperator = "#";
+		String spaceSeperator = "@";
+		
+		UserService us = Context.getUserService();
+		ObjectFactory objectFactory = new ObjectFactory();
+		
+		for (String userName : userList) {
+			UserInformation userInfo = userInformationMap.get(userName);
+			String virtualRole = userInfo.getVirtualRole();
+			
+			if (!virtualRoles.contains(virtualRole)) {
+				virtualRoles.add(virtualRole);
+			}
+		}
+		
+		int roleCounter = 0;
+		
+		for (String virtualRole : virtualRoles) {
+			Set<Privilege> totalPrivileges = new HashSet<Privilege>();
+			String[] userRoles = virtualRole.split(userRoleSeparator);
+			roleCounter++;
+			for (String userRole : userRoles) {
+				String[] roles = userRole.split(interRoleSperator);
+				
+				for (String role : roles) {
+					String roleNameParts[] = role.split(spaceSeperator);
+					String roleName = getRoleName(roleNameParts);
+					Set<Privilege> priviledgeList = us.getRole(roleName).getPrivileges();
+					
+					for (Privilege priv : priviledgeList) {
+						if (!totalPrivileges.contains(priv)) {
+							totalPrivileges.add(priv);
+						}
+					}//end of priviledges 
+				}//end of roles
+			} //end of user roles
+			
+			PolicyType policy = new PolicyType();
+			policy.setRuleCombiningAlgId("urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:permit-overrides");
+			
+			TargetType policyTarget = new TargetType();
+			SubjectsType policySubjects = new SubjectsType();
+			SubjectType policySubject = new SubjectType();
+			SubjectMatchType policySubjectMatch = new SubjectMatchType();
+			policySubjectMatch.setMatchId("urn:oasis:names:tc:xacml:1.0:function:string-equal");
+			
+			SubjectAttributeDesignatorType policySubjectAttributeDesignator = new SubjectAttributeDesignatorType();
+			policySubjectAttributeDesignator.setAttributeId("opnmrs.virtual.role");
+			policySubjectAttributeDesignator.setDataType("http://www.w3.org/2001/XMLSchema#string");
+			policySubjectMatch.setSubjectAttributeDesignator(policySubjectAttributeDesignator);
+			
+			AttributeValueType attributeValueType = new AttributeValueType();
+			attributeValueType.setDataType("http://www.w3.org/2001/XMLSchema#string");
+			attributeValueType.getContent().add(virtualRole);
+			policySubjectMatch.setAttributeValue(attributeValueType);
+			policySubject.getSubjectMatches().add(policySubjectMatch);
+			policySubjects.getSubjects().add(policySubject);
+			
+			policyTarget.setSubjects(policySubjects);
+			policy.setTarget(policyTarget);
+			
+			int counter = 0;
+			for (Privilege userPriviledge : totalPrivileges) {
+				counter++;
+				RuleType rule = new RuleType();
+				
+				TargetType ruleTarget = new TargetType();
+				
+				ResourcesType ruleTargetResources = new ResourcesType();
+				ResourceType ruleTargetResource = new ResourceType();
+				ResourceMatchType resourceMatchType = new ResourceMatchType();
+				resourceMatchType.setMatchId("urn:oasis:names:tc:xacml:1.0:function:string-equal");
+				
+				AttributeDesignatorType resourceAttributeDesignator = new AttributeDesignatorType();
+				resourceAttributeDesignator.setAttributeId("openmrs.priviledge");
+				resourceAttributeDesignator.setDataType("http://www.w3.org/2001/XMLSchema#string");
+				resourceMatchType.setResourceAttributeDesignator(resourceAttributeDesignator);
+				
+				AttributeValueType resourceAttribute = new AttributeValueType();
+				resourceAttribute.setDataType("http://www.w3.org/2001/XMLSchema#string");
+				resourceAttribute.getContent().add(userPriviledge.getPrivilege());
+				resourceMatchType.setAttributeValue(resourceAttribute);
+				
+				ruleTargetResource.getResourceMatches().add(resourceMatchType);
+				ruleTargetResources.getResources().add(ruleTargetResource);
+				
+				ruleTarget.setResources(ruleTargetResources);
+				
+				rule.setTarget(ruleTarget);
+				rule.setRuleId(virtualRole + "_" + counter);
+				rule.setEffect(EffectType.PERMIT);
+				
+				policy.getAdditionalInformation().add(rule);
+			}
+			
+			counter++;
+			RuleType lastRule = new RuleType();
+			lastRule.setRuleId(virtualRole + "_" + counter);
+			lastRule.setEffect(EffectType.DENY);
+			policy.getAdditionalInformation().add(lastRule);
+			
+			policy.setPolicyId("openmrs-" + roleCounter);
+			
+			JAXBElement<PolicyType> policyType = objectFactory.createPolicy(policy);
+			policySet.getAdditionalInformation().add(policyType);
+			
+		}// end fo virtual roles
+		
+	}
+	
+	private String getRoleName(String[] nameParts) {
+		StringBuilder roleName = new StringBuilder();
+		int counter = 0;
+		for (String namePart : nameParts) {
+			if (counter == nameParts.length - 1) {
+				roleName.append(namePart);
+			} else {
+				roleName.append(namePart).append(" ");
+			}
+			
+			counter++;
+		}
+		
+		return roleName.toString();
+	}
+	
+}

@@ -1,0 +1,96 @@
+package org.openmrs.web.controller.policy;
+
+import java.io.StringReader;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Unmarshaller;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.openmrs.Policy;
+import org.openmrs.api.PolicyService;
+import org.openmrs.api.context.Context;
+import org.openmrs.core.policy.PolicySetType;
+import org.openmrs.core.policy.PolicyType;
+import org.openmrs.util.ContextManager;
+import org.openmrs.web.WebConstants;
+import org.springframework.context.support.MessageSourceAccessor;
+import org.springframework.validation.BindException;
+import org.springframework.web.bind.ServletRequestDataBinder;
+import org.springframework.web.multipart.support.StringMultipartFileEditor;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.SimpleFormController;
+import org.springframework.web.servlet.view.RedirectView;
+
+public class PolicyFormController extends SimpleFormController {
+	
+	private static final Log LOG = LogFactory.getLog(PolicyFormController.class);
+	
+	protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) throws Exception {
+		super.initBinder(request, binder);
+		binder.registerCustomEditor(String.class, new StringMultipartFileEditor());
+	}
+	
+	protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object obj,
+	        BindException errors) throws Exception {
+		
+		HttpSession httpSession = request.getSession();
+		MessageSourceAccessor msa = getMessageSourceAccessor();
+		String responseMsg = null;
+		
+		if (Context.isAuthenticated()) {
+			Policy policy = (Policy) obj;
+			
+			JAXBContext policyContext = ContextManager.getPolicyContext();
+			Unmarshaller policyUnmarshaller = policyContext.createUnmarshaller();
+			
+			PolicyService ps = Context.getPolicyService();
+			
+			boolean isValidPolicyContent = false;
+			
+			try {
+				JAXBElement<?> policyRequest = (JAXBElement<?>) policyUnmarshaller.unmarshal(new StringReader(policy
+				        .getContent()));
+				
+				Object policyObject = policyRequest.getValue();
+				
+				if (policyObject instanceof PolicyType) {
+					isValidPolicyContent = true;
+				} else if (policyObject instanceof PolicySetType) {
+					isValidPolicyContent = true;
+				}
+			}
+			catch (Exception e) {
+				LOG.error("Invalid policy content recieved ", e);
+				responseMsg = msa.getMessage("Policy.invalidContent");
+			}
+			
+			if (isValidPolicyContent) {
+				Policy p = ps.savePolicy(policy);
+				
+				if (p.getPolicyId() != null) {
+					responseMsg = msa.getMessage("Policy.savedSuccessfully");
+				} else {
+					responseMsg = msa.getMessage("Policy.saveFailed");
+				}
+				
+				httpSession.setAttribute(WebConstants.OPENMRS_MSG_ATTR, responseMsg);
+			}
+		}
+		
+		httpSession.setAttribute(WebConstants.OPENMRS_MSG_ATTR, responseMsg);
+		String view = getSuccessView();
+		return new ModelAndView(new RedirectView(view));
+	}
+	
+	protected Object formBackingObject(HttpServletRequest request) throws ServletException {
+		Policy policy = new Policy();
+		return policy;
+	}
+	
+}

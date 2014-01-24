@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openmrs">
+
+    <class name="Obligation" table="obligation">
+    
+    	<id name="obligationId" type="java.lang.Integer" column="obligation_id" unsaved-value="0">
+			<generator class="native">
+				<param name="sequence">obligation_obligation_id_seq</param>
+			</generator>
+		</id>
+
+		<property name="obligationName" type="java.lang.String"
+			column="obligation_name" not-null="true" length="255" />
+			
+		<property name="contextName" type="java.lang.String"
+			column="context_name" not-null="true" length="255" />
+			
+		<property name="description" type="java.lang.String"
+			column="description" length="255" />
+			
+		<property name="value" type="java.lang.String"
+			column="value" length="40" />
+			
+		<property name="user" type="java.lang.String" column="user_id" />
+			
+		<property name="role" type="java.lang.String" column="role_id" length="50"/>	
+			
+			
+    </class>
+
+</hibernate-mapping>

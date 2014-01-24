@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openmrs">
+
+    <class name="PolicyAttribute" table="policy_attribute">
+    
+    	<id name="attributeId" type="java.lang.Integer" column="attribute_id" unsaved-value="0">
+			<generator class="native">
+				<param name="sequence">policy_attribute_attribute_id_seq</param>
+			</generator>
+		</id>
+
+		<property name="attributeName" type="java.lang.String" column="attribute_name" not-null="true" length="255"  />
+			
+		<property name="attributeType" type="java.lang.Integer" column="attribute_type" not-null="true"/>
+			
+		<property name="dataType" type="java.lang.String" column="data_type" not-null="true" length="40" />
+			
+		<property name="ownerType" type="java.lang.String" column="owner_type" not-null="true" length="40" />
+		
+		<property name="changeStratergy" type="java.lang.Integer" column="change_stratergy" not-null="true"/>
+		
+		<property name="user" type="java.lang.String" column="user_id" />
+			
+		<property name="role" type="java.lang.String" column="role_id" length="50"/>
+		
+		<property name="initialValue" type="java.lang.String" column="initial_value" not-null="true" length="50"/>
+			
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib
+END
+OpenmrsMessageTagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib/OpenmrsMessageTagTest.java
+END
+RequireTagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib/RequireTagTest.java
+END
+FormatTagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib/FormatTagTest.java
+END
+ForEachEncounterTagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib/ForEachEncounterTagTest.java
+END
+PortletTagTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/test/java/org/openmrs/web/taglib/PortletTagTest.java
+END

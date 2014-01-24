@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/resources/org/openmrs/hl7/include
+END
+examplehl7handlers-0.1.omod
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/resources/org/openmrs/hl7/include/examplehl7handlers-0.1.omod
+END
+ORUTest-initialData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/122/trunk/openmrs-policy-version/api/src/test/resources/org/openmrs/hl7/include/ORUTest-initialData.xml
+END

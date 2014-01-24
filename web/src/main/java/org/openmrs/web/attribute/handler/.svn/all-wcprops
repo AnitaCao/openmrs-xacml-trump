@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler
+END
+FieldGenDatatypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/FieldGenDatatypeHandler.java
+END
+LongFreeTextTextareaHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/LongFreeTextTextareaHandler.java
+END
+BooleanFieldGenDatatypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/BooleanFieldGenDatatypeHandler.java
+END
+LongFreeTextFileUploadHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/LongFreeTextFileUploadHandler.java
+END
+HtmlDisplayableDatatypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/HtmlDisplayableDatatypeHandler.java
+END
+DateFieldGenDatatypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/DateFieldGenDatatypeHandler.java
+END
+WebDatatypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/java/org/openmrs/web/attribute/handler/WebDatatypeHandler.java
+END

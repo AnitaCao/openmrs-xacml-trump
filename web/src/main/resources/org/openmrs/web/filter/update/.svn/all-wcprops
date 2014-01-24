@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/update
+END
+maintenance.vm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/update/maintenance.vm
+END
+header.vm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/update/header.vm
+END
+footer.vm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/update/footer.vm
+END
+reviewchanges.vm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/122/trunk/openmrs-policy-version/web/src/main/resources/org/openmrs/web/filter/update/reviewchanges.vm
+END

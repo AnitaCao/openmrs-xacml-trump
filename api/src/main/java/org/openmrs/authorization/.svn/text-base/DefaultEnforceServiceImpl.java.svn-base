@@ -1,0 +1,326 @@
+package org.openmrs.authorization;
+
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.openmrs.PolicyAttribute;
+import org.openmrs.PolicyAttributeValue;
+import org.openmrs.Role;
+import org.openmrs.User;
+import org.openmrs.api.APIException;
+import org.openmrs.api.DecesionService;
+import org.openmrs.api.EnforceService;
+import org.openmrs.api.context.Context;
+import org.openmrs.core.context.AttributeType;
+import org.openmrs.core.context.AttributeValueType;
+import org.openmrs.core.context.DecisionType;
+import org.openmrs.core.context.EnvironmentType;
+import org.openmrs.core.context.ObjectFactory;
+import org.openmrs.core.context.RequestType;
+import org.openmrs.core.context.ResourceType;
+import org.openmrs.core.context.ResponseType;
+import org.openmrs.core.context.ResultType;
+import org.openmrs.core.context.SubjectType;
+import org.openmrs.core.policy.ObligationType;
+import org.openmrs.core.policy.ObligationsType;
+import org.openmrs.util.ContextManager;
+
+public class DefaultEnforceServiceImpl implements EnforceService {
+	
+	private List<String> obligationList = new ArrayList<String>();
+	
+	private static final Log LOG = LogFactory.getLog(DefaultEnforceServiceImpl.class);
+	
+	public DefaultEnforceServiceImpl() {
+	}
+	
+	@Override
+	public boolean isAuthorized(String priviledge, User user) throws APIException {
+		
+		boolean isAuthorized = false;
+		
+		try {
+			obligationList = new ArrayList<String>();
+			RequestType requestType = generateRequest(priviledge, user);
+			
+			DecesionService pdp = Context.getDecesionService();
+			
+			Marshaller marshaller = ContextManager.getRequestContext().createMarshaller();
+			StringWriter requestWriter = new StringWriter();
+			
+			ObjectFactory objectFactory = new ObjectFactory();
+			
+			marshaller.marshal(objectFactory.createRequest(requestType), requestWriter);
+			
+			System.out.println("Request " + requestWriter.toString());
+			String response = pdp.authorized(requestWriter.toString());
+			System.out.println("Response " + response);
+			
+			Unmarshaller unmarshaller = ContextManager.getRequestContext().createUnmarshaller();
+			JAXBElement<ResponseType> object = (JAXBElement<ResponseType>) unmarshaller
+			        .unmarshal(new StringReader(response));
+			ResponseType resp = object.getValue();
+			
+			if (resp != null) {
+				List<ResultType> resultList = resp.getResults();
+				ResultType result = resultList.get(0);
+				
+				if (result.getDecision().equals(DecisionType.PERMIT)) {
+					isAuthorized = true;
+					
+					ObligationsType obligations = result.getObligations();
+					
+					if (obligations != null) {
+						for (ObligationType obligation : obligations.getObligations()) {
+							obligationList.add(obligation.getObligationId());
+						}
+					}
+				}
+				
+			}
+		}
+		catch (Exception e) {
+			LOG.error("PEP Error ", e);
+		}
+		
+		return isAuthorized;
+	}
+	
+	@Override
+	public List<String> getObligations() {
+		return obligationList;
+	}
+	
+	private RequestType generateRequest(String priviledge, User user) throws Exception {
+		String userName = user.getUsername();
+		String virtualRole = Context.getPolicyService().getVirtualRole(user);
+		
+		RequestType requestType = new RequestType();
+		SubjectType subjectType = new SubjectType();
+		
+		AttributeType subjectRoleAttribute = new AttributeType();
+		subjectRoleAttribute.setDataType("http://www.w3.org/2001/XMLSchema#string");
+		subjectRoleAttribute.setAttributeId("opnmrs.virtual.role");
+		AttributeValueType subjectRoleAttributeValue = new AttributeValueType();
+		subjectRoleAttributeValue.getContent().add(virtualRole);
+		subjectRoleAttribute.getAttributeValues().add(subjectRoleAttributeValue);
+		subjectType.getAttributes().add(subjectRoleAttribute);
+		
+		AttributeType subjectUserAttribute = new AttributeType();
+		subjectUserAttribute.setDataType("http://www.w3.org/2001/XMLSchema#string");
+		subjectUserAttribute.setAttributeId("opnmrs.user.id");
+		AttributeValueType subjectUserAttributeValue = new AttributeValueType();
+		subjectUserAttributeValue.getContent().add(userName);
+		subjectUserAttribute.getAttributeValues().add(subjectUserAttributeValue);
+		subjectType.getAttributes().add(subjectUserAttribute);
+		
+		requestType.getSubjects().add(subjectType);
+		
+		ResourceType resourceType = new ResourceType();
+		AttributeType resourceAttribute = new AttributeType();
+		resourceAttribute.setAttributeId("openmrs.priviledge");
+		resourceAttribute.setDataType("http://www.w3.org/2001/XMLSchema#string");
+		
+		AttributeValueType resourceAttributeValue = new AttributeValueType();
+		resourceAttributeValue.getContent().add(priviledge);
+		resourceAttribute.getAttributeValues().add(resourceAttributeValue);
+		
+		resourceType.getAttributes().add(resourceAttribute);
+		requestType.getResources().add(resourceType);
+		
+		EnvironmentType environment = new EnvironmentType();
+		AttributeType currentTime = new AttributeType();
+		currentTime.setAttributeId("urn:oasis:names:tc:xacml:1.0:environment:current-time");
+		currentTime.setDataType("http://www.w3.org/2001/XMLSchema#time");
+		
+		AttributeValueType timeValue = new AttributeValueType();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+		String formatedTime = sdf.format(new Date());
+		
+		timeValue.getContent().add(formatedTime);
+		currentTime.getAttributeValues().add(timeValue);
+		
+		environment.getAttributes().add(currentTime);
+		requestType.setEnvironment(environment);
+		
+		//Adding attributes
+		List<Role> roleList = Context.getUserService().getUserRoles(user);
+		List<String> roleNameList = new ArrayList<String>();
+		
+		for (Role role : roleList) {
+			roleNameList.add(role.getName());
+		}
+		
+		List<PolicyAttribute> attributeList = Context.getPolicyService().getAttributesByRoles(roleNameList);
+		
+		List<PolicyAttribute> dynamicAttribList = new ArrayList<PolicyAttribute>();
+		List<PolicyAttribute> staticAttribList = new ArrayList<PolicyAttribute>();
+		
+		for (PolicyAttribute attribute : attributeList) {
+			if (attribute.getChangeStratergy() == 0) { //static
+				dynamicAttribList.add(attribute);
+			} else { //dynamic
+				staticAttribList.add(attribute);
+			}
+		}
+		
+		if (staticAttribList.size() > 0) {
+			
+			for (PolicyAttribute attribute : staticAttribList) {
+				AttributeType staticAttribute = new AttributeType();
+				staticAttribute.setDataType(getXACMLDataType(attribute.getDataType()));
+				staticAttribute.setAttributeId(attribute.getAttributeName());
+				
+				AttributeValueType staticAttributeValue = new AttributeValueType();
+				staticAttributeValue.getContent().add(attribute.getInitialValue());
+				staticAttribute.getAttributeValues().add(staticAttributeValue);
+				
+				int ownerType = attribute.getAttributeType();
+				
+				switch (ownerType) {
+					case 1:
+						subjectType.getAttributes().add(staticAttribute);
+						break; //subject
+					case 2:
+						requestType.getAction().getAttributes().add(staticAttribute);
+						break; //action
+					case 3:
+						resourceType.getAttributes().add(staticAttribute);
+						break; //resource
+				}
+				
+			}
+		}
+		
+		if (dynamicAttribList.size() > 0) {
+			
+			List<PolicyAttributeValue> dynamicAttributeValueList = Context.getPolicyService().getAttributeValues(user,
+			    dynamicAttribList);
+			Map<PolicyAttribute, PolicyAttributeValue> attributeMap = new HashMap<PolicyAttribute, PolicyAttributeValue>();
+			
+			if (dynamicAttributeValueList.size() == 0) {
+				for (PolicyAttribute attribute : dynamicAttribList) {
+					PolicyAttributeValue attribValue = new PolicyAttributeValue();
+					attribValue.setAttribute(attribute);
+					attribValue.setUser(user);
+					attribValue.setAttributeValue(attribute.getInitialValue());
+					dynamicAttributeValueList.add(attribValue);
+					attributeMap.put(attribute, attribValue);
+				}
+			} else {
+				for (PolicyAttributeValue attribValue : dynamicAttributeValueList) {
+					attributeMap.put(attribValue.getAttribute(), attribValue);
+				}
+				
+				for (PolicyAttribute attribute : dynamicAttribList) {
+					if (!attributeMap.containsKey(attribute)) {
+						PolicyAttributeValue attribValue = new PolicyAttributeValue();
+						attribValue.setAttribute(attribute);
+						attribValue.setUser(user);
+						attribValue.setAttributeValue(attribute.getInitialValue());
+						dynamicAttributeValueList.add(attribValue);
+						attributeMap.put(attribute, attribValue);
+					}
+				}
+			}
+			
+			for (PolicyAttribute attribute : dynamicAttribList) {
+				PolicyAttributeValue attribValue = attributeMap.get(attribute);
+				AttributeType dynamicAttribute = new AttributeType();
+				dynamicAttribute.setDataType(getXACMLDataType(attribute.getDataType()));
+				dynamicAttribute.setAttributeId(attribute.getAttributeName());
+				
+				AttributeValueType dynamicAttributeValue = new AttributeValueType();
+				
+				if (attribValue != null) {
+					dynamicAttributeValue.getContent().add(attribValue.getAttributeValue());
+				} else {
+					dynamicAttributeValue.getContent().add(attribute.getInitialValue());
+				}
+				
+				dynamicAttribute.getAttributeValues().add(dynamicAttributeValue);
+				
+				int ownerType = attribute.getAttributeType();
+				
+				switch (ownerType) {
+					case 1:
+						subjectType.getAttributes().add(dynamicAttribute);
+						break; //subject
+					case 2:
+						requestType.getAction().getAttributes().add(dynamicAttribute);
+						break; //action
+					case 3:
+						resourceType.getAttributes().add(dynamicAttribute);
+						break; //resource
+				}
+				
+			}
+			
+			updateDynanicAttributeValues(dynamicAttributeValueList);
+		}
+		
+		return requestType;
+	}
+	
+	private void updateDynanicAttributeValues(List<PolicyAttributeValue> attributeValueList) throws Exception {
+		Context.getPolicyService().removePolicyAttributesValues(attributeValueList);
+		
+		List<PolicyAttributeValue> newAttribValueList = new ArrayList<PolicyAttributeValue>();
+		for (PolicyAttributeValue attribValue : attributeValueList) {
+			PolicyAttribute attribute = attribValue.getAttribute();
+			String dataType = attribute.getDataType();
+			String currentValue = attribValue.getAttributeValue();
+			String newValue = performOperation(dataType, currentValue);
+			attribValue.setAttributeValue(newValue);
+			newAttribValueList.add(attribValue);
+		}
+		
+		Context.getPolicyService().saveAttributeValues(newAttribValueList);
+		
+	}
+	
+	private String getXACMLDataType(String dataType) throws Exception {
+		String xacmlDataType = "";
+		
+		if (dataType.equals("integer")) {
+			xacmlDataType = "http://www.w3.org/2001/XMLSchema#integer";
+		}
+		
+		if (dataType.equals("double")) {
+			xacmlDataType = "http://www.w3.org/2001/XMLSchema#double";
+		}
+		return xacmlDataType;
+	}
+	
+	private String performOperation(String dataType, String currentValue) throws Exception {
+		String nextValue = "";
+		if (dataType.equals("integer")) {
+			int currentVal = Integer.parseInt(currentValue);
+			int nextVal = currentVal + 1;
+			nextValue = String.valueOf(nextVal);
+		} else if (dataType.equals("double")) {
+			double currentVal = Double.parseDouble(currentValue);
+			double nextval = currentVal + 1;
+			nextValue = String.valueOf(nextval);
+		} else {
+			throw new Exception("Unsupported dynamic attribute type");
+		}
+		
+		return nextValue;
+		
+	}
+	
+}
